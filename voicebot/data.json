@@ -1,0 +1,907 @@
+{
+    "intents": [
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you?",
+                "What do you do?",
+                "Tell me about yourself"
+            ],
+            "responses": [
+                "Hello! I am Bhugol, the chatbot for Bhuvan. I can easily provide you access to Bhuvan's data and help you navigate through its pages. Happy to help you!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "wishing",
+            "patterns": [
+                "Hi there",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you",
+                "Hi there, how can I help?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "How are you",
+                "How are you doing?",
+                "How you doing?"
+                
+            ],
+            "responses": [
+                "I am fine, how are you?",
+                "Thanks for asking, I am fine. How are you?"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Nice chatting to you, bye",
+                "Till next time"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me",
+                "Thankyou so much"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "default",
+            "patterns": [
+                ""
+            ],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How can you help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I can guide you through the Bhuvan data, provide access to its webpages, and answer your queries for Bhuvan- the geo-platform of ISRO."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan Home Page",
+            "patterns": [
+                "Take me to the Home Page",
+                "Get me back to the first page"
+            ],
+            "responses": [
+                {
+                    "res": "Shall I redirect you to the Bhuvan Home Page?",
+                    "url": "https://bhuvan.nrsc.gov.in"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan Aadhaar centre ",
+            "patterns": [
+                "Show me nearby Aadhaar centres ",
+                "Aadhaar centres in India",
+                "Aadhaar centres near me",
+                "whare are Aadhaar Updation centres? ",
+                "Tell me about Aadhaar Information centre"
+            ],
+            "responses": [
+                {
+                    "res": "Do you want to go to the Aadhar centres page?",
+                    "url": "https://bhuvan-app3.nrsc.gov.in/aadhaar/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan MGNREGA ",
+            "patterns": [
+                "I want to know about MGNREGA",
+                "Show me the information about MGNREGA",
+                "I want the data of MGNREGA",
+                "Tell me about NREGA",
+                "Tell me about Mahatma Gandhi National Rural Employment Guarantee Act, 2005",
+                "National Rural Employment Guarantee Act,2005"
+            ],
+            "responses": [
+                {
+                    "res": "MNREGA is a social welfare program aiming the 'right to work.'The Act was enacted in 2005 and is one of the largest public works programs in the world. It focuses on employment guarantee, financial inclusion, and decentralised planning. Shall I redirect you to the MGNREGA Page?",
+                    "url": " https://bhuvan-app2.nrsc.gov.in/mgnrega/mgnrega_phase2.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan data archive ",
+            "patterns": [
+                "Show me locations from satellite ",
+                "NRSC maps",
+                "Locations from different satellites",
+                "India map by remote sensing "
+            ],
+            "responses": [
+                {
+                    "res": "NRSC open data allows to browse and download the data from Bbuvan portal. Shall I you to the Bhuvan data archive?",
+                    "url": "https://bhuvan-app3.nrsc.gov.in/data/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan 2D",
+            "patterns": [
+                "I want to access Bhuvan 2D data",
+                "Data from Bhuvan in 2D",
+                "Bhuvan 2D"
+            ],
+            "responses": [
+                {
+                    "res": "Let me assist you in seeing 2D data from Bhuvan. Shall we go to the required page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/bhuvan2d/bhuvan/bhuvan2d.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan API",
+            "patterns": [
+                "I want to access Bhuvan API",
+                "Data from Bhuvan API",
+                "Can you please provide me the access to Bhuvan API",
+                "Provide me access to the data from Bhuvan API",
+                "I want to use the data from Bhuvan API"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuvan API helps you to access the data present on Bhuvan portal and helps you to use it. Can I assist you in opening the Bhuvan API Page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/api/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "A.P. State Housing Corporation",
+            "patterns": [
+                "I want to know about A.P. State Housing Corporation",
+                "Data from Bhuvan A.P. State Housing Corporation",
+                "APSHCL"
+            ],
+            "responses": [
+                {
+                    "res": "Can I present you the A.P. State Housing Corporation Page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/apshcl"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan Discussion Forum",
+            "patterns": [
+                "Bhuvan Discussion Forum ",
+                "Take me to the Discussion Forum"
+            ],
+            "responses": [
+                {
+                    "res": "Here is the data from Bhuvan Discussion Forum. Dp you want to open it?",
+                    "url": "https://bhuvan.nrsc.gov.in/forum"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Urban housing for all ",
+            "patterns": [
+                "Show me ministry of housing and urban affairs ",
+                "Map through ministry of housing and urban affairs",
+                "Locations for housing ministry",
+                "Location for urban rentals near me",
+                " Affordable rental houses near me"
+            ],
+            "responses": [
+                {
+                    "res": "Thanks for asking. Here are some results for housing, shall I redirect you to the Housing Page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/hfa/housing_for_all.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan 3D",
+            "patterns": [
+                "Bhuvan 3D ",
+                "Earth in 3D",
+                "India in 3D",
+                "I want to access the 3D data"
+            ],
+            "responses": [
+                {
+                    "res": "To see the view of the country in 3D, let me assist you in opening the 3D data.",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/globe/3d.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Water bodies information system",
+            "patterns": [
+                "Show me nearby waterbodies",
+                "Map through waterbodies in India",
+                "Search water area spread in India",
+                "Check water bodeis quality ratio "
+            ],
+            "responses": [
+                {
+                    "res": "Water bodies information system presenst the data of various water bodies of the country, taken by the satellites of NRSC. Shall I redirect you to the waterbodies page?",
+                    "url": "https://bhuvan-wbis.nrsc.gov.in/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan Sign up ",
+            "patterns": [
+                "Sign in to bhuvan website",
+                "Sign in/sign up to visit site ",
+                "Bhuvan single sign on",
+                "Sign up page for Bhuvan"
+            ],
+            "responses": [
+                {
+                    "res": "You can sign into your BHuvan account. Registration is optional, but some features requireit. Shall I take you to login page?",
+                    "url": "https://bhuvan-app2.nrsc.gov.in/planner/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan resource development",
+            "patterns": [
+                "Ministry of Human Resource Development",
+                "Show me education centres near me ",
+                "Nearby colleges",
+                "Search education centre",
+                "Tell me about RUSA"
+            ],
+            "responses": [
+                {
+                    "res": "The data of Ministry of Human Resource Development on Bhuvan provides a detailed insight in education centres present in the country. Shall I redirect you to the resource centres?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/mhrd_rusa/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Distribution of flycatchers",
+            "patterns": [
+                "How many flycatchers are in India?",
+                "How are flycatchers distributed?",
+                "Number of fkycatchers in a paticular area",
+                "Distribution of flycatchers"
+            ],
+            "responses": [
+                {
+                    "res": "The information about flycatchers in India is provided on the Bhuvan website, along with their detailed information.Shall I redirect you to the results?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/flycatchers/flycatchers.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan tourism",
+            "patterns": [
+                "Show me nearby tourism spots ",
+                " please tell me nearby tourist sites",
+                "best tourist spots in India"
+            ],
+            "responses": [
+                {
+                    "res": "Rediricting you to the tourism site",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/tourism/tourism.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Disaster services",
+            "patterns": [
+                "tell me about disaster and management",
+                "Previous disasters in India",
+                "Search for disaster hitory in India",
+                "types of disasters in India"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuvan is ready to serve you in the times of disaster. Let me assist you to see the Disaster Management Data.",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/disaster/disaster.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan datasets",
+            "patterns": [
+                "provide the bhuvan datasets",
+                "tell me about bhuvan datasets"
+            ],
+            "responses": [
+                {
+                    "res": "The thematic service of Bhuvan provides browsing thematic datasets which can be consumed by users as per their needs. Shall I direct you to that page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/thematic/thematic/index.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Weather services",
+            "patterns": [
+                "tell me the weather report of India",
+                "Previous weather records in India",
+                "Search for current weather in India",
+                "Weather in different part of India"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuvan can assist you to observe the weather patterns of the nation, and use them for analysis. May we go to the product page of Inidan Meteorological Department. ",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/imd/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Agricultural department",
+            "patterns": [
+                "tell me about agricultural management",
+                "Agricultural projects and investments",
+                "Pradhan Mantri Krishi Sinchayee Yojana",
+                "(PMKSY)"
+            ],
+            "responses": [
+                {
+                    "res": "The Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) was launched on 1st July, 2015 to achieve assistance of farmers and improve agriculture in India. Shall we go to the required page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/pdmc/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Hot weather outlook",
+            "patterns": [
+                "tell me about disaster and management",
+                "Previous disasters in India",
+                "Search for disaster hitory in India",
+                "types of disasters in India"
+            ],
+            "responses": [
+                {
+                    "res": "Various maps indicate areas with potential for extreme heat conditions through daily maximum temperatures and their deviation from climatological values. Let me assist you in going to that page.",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/heatwave/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan ganga",
+            "patterns": [
+                "National Mission for Clean Ganga",
+                "Clean Ganga",
+                "Ganga"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuvan Ganga is made for the geospatial support for National Mission for Clean Ganga and provide data for its conditions. Shall we go to the required page?",	
+                    "url": "https://bhuvan-app1.nrsc.gov.in/mowr_ganga/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan vaidyaseva ",
+            "patterns": [
+                "Show me hospital near me ",
+                "Nearby hospital services",
+                "Search hospitals near me",
+                "Govt hospitals near me"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuavn can provide you access to the hospital data of India. Can I assist you in opening the nearby hospital details?",
+                    "map": "hospital"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Geographical Indication",
+            "patterns": [
+                "What is the geographical indication of India? ",
+                "GI of India",
+                "India's GI",
+                "I want to access the geographical indication of India",
+                "Product origin from India",
+                "Products from India"
+            ],
+            "responses": [
+                {
+                    "res": "Geographical Indication is an indication which identifies products as originating from a specific geographical region, where a given quality, reputation and other characteristics of the product are essentially attributable to its geographical origin. Shall I redirect you to the necessary page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/geographicalindication/index.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Map Data",
+            "patterns": [
+                "Show me nearby postal locations",
+                "are there any post office near me?",
+                "Give me the location of postal offices"
+            ],
+            "responses": [
+                {
+                    "res": "Here are the postal locations of the area",
+                    "map": "postal"
+                },
+                {
+                    "res": "The following location shows position of post offices near you",
+                    "map": "postal"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Telangana Forest",
+            "patterns": [
+                "Show me Telangana Forest",
+                "Map of Telangana forest",
+                "Search Telangana Forest spread in India",
+                "Waste land in Telangana Forest "
+            ],
+            "responses": [
+                {
+                    "res": "The Telangana Forest Department is responsible for the management, conservation, and protection of these forests, playing a crucial role in biodiversity preservation and environmental sustainability. Do you want to be redirected to the forest page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/ts_forest/"
+                },
+                {
+                    "res": "The Telangana Forest Department is responsible for the management, conservation, and protection of these forests, playing a crucial role in biodiversity preservation and environmental sustainability. Do you want to be redirected to the forest page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/ts_forest/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Punjab Forest",
+            "patterns": [
+                "Show me Punjab Forest",
+                "Map of Punjab forest",
+                "Search Punjab Forest spread in India",
+                "Waste land in Punjab Forest"
+            ],
+            "responses": [
+                {
+                    "res": " Punjab, a state in northern India, has a diverse landscape that includes forests, though the forest cover is relatively limited compared to some other states.Do you want to be redirected to the page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/pb_forest/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Weather Climate Environment Modelled Products",
+            "patterns": [
+                "Tell me about weather and climate",
+                "Weather",
+                "Search climate",
+                "Tell me about weather climate environment modelled products"
+            ],
+            "responses": [
+                {
+                    "res": "Weather, climate, and environmental modeling involve the use of computer models to simulate and predict various aspects of the Earth's atmosphere and related systems.Do you want to be redirected to weather climate environment modelled products page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/narl/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Karnataka Forest",
+            "patterns": [
+                "Show me Karnataka Forest",
+                "Map of Karnataka forest",
+                "Search Karnataka Forest spread in India",
+                "Waste land in karnataka Forest"
+            ],
+            "responses": [
+                {
+                    "res": "Karnataka, a state in southern India, is known for its diverse ecosystems and forests that contribute significantly to the state's biodiversity.Thanks for asking , do You want to be redirected to the page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/ka_forest/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan - Haryana",
+            "patterns": [
+                "Tell me about Haryana",
+                "Map of Haryana",
+                "best tourist spots in Haryana"
+            ],
+            "responses": [
+                {
+                    "res": "Haryana, located in northern India, is a prosperous state known for its significant contributions to the Green Revolution and robust industrial development.Do you want to be redirected the Haryana site?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/state/HR"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Saraswati Palaeochannels",
+            "patterns": [
+                "tell me about Saraswati Palaeochannels",
+                "lost river Saraswati",
+                "Search for linkage of vedic Saraswati with Himalyan Rivers",
+                "tell me about vedas"
+            ],
+            "responses": [
+                {
+                    "res": "The Saraswati Palaeochannels refer to the ancient river channels believed to be remnants of the once-flourishing Saraswati River in the Indian subcontinent.Do you want to be rediricted to the Saraswati river page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/saraswati/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Map Of India",
+            "patterns": [
+                "provide me the map of India",
+                "tell me about index map of India",
+                "preview of India's map"
+            ],
+            "responses": [
+                {
+                    "res": "The map of India depicts the country's diverse geography, with the Himalayan mountain range in the north, the fertile Gangetic plains, the Thar Desert in the west, and the coastal regions in the east and west.Do you want to be rediricted you to the map?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/web_view/index.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Pradhan Mantri Jan Vikas Karyakram",
+            "patterns": [
+                "tell me about Pradhan Mantri Jan Vikas Karyakram",
+                "Tell me about Jan Vikas scheme",
+                "Search for current Vikas scheme",
+                "Locations related to Jan Vikas scheme"
+            ],
+            "responses": [
+                {
+                    "res": "The Pradhan Mantri Jan Vikas Karyakram (PMJVK) is a Centrally Sponsored Scheme (CSS) that aims to improve socio-economic infrastructure for minority communities. The program focuses on education, health, and skill development.Do you want to be redirected to the Pradhan Mantri Jan Vikas Karyakram page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/pmjvk"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Anganwadi",
+            "patterns": [
+                "tell me about Anganwadi",
+                "Anganwadi records of India",
+                "Anganwadi projects and investments"
+            ],
+            "responses": [
+                {
+                    "res": "Anganwadi is a government-sponsored child care and mother and child health program in India. These centers provide essential services such as nutrition, healthcare, and early childhood education to pregnant women, nursing mothers, and children under the age of six.Do you want to be redirected  to the Anganwadi page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/anganwadi/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "COVID-19",
+            "patterns": [
+                "tell me about COVID-19",
+                "Previous COVID-19 records in India",
+                "Search for COVID-19 India",
+                "types of data of COVID-19 in India"
+            ],
+            "responses": [
+                {
+                    "res": "COVID-19, caused by the SARS-CoV-2 virus, is a global pandemic that emerged in late 2019. It has led to widespread illness, disruptions in daily life, and extensive efforts worldwide to mitigate its impact through vaccination campaigns, public health measures, and ongoing research.Do you want to be redirected to the COVID-19 page?",
+                    "url": "https://bhuvan-app3.nrsc.gov.in/corona/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Ministry of Environment,Forest and Climate Change Centralised Resource Inventory System - CRIS",
+            "patterns": [
+                "tell me about Centralised Resource Inventory System ",
+                "CRIS in India",
+                "tell me about ministry of enviornment,forest and climate change",
+                "map of CRIS"
+            ],
+            "responses": [
+                {
+                    "res": "As a one-stop-shop for storing all the information related to the institutional research activity, CRIS systems play a key role in the area of research administration by institutional Research Offices. Among many others, this involves aspects such as: Research impact and its analysis.Do you want to be redirected to the CRIS service page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/moef_cris"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan NOEDA Data Products",
+            "patterns": [
+                "Show me Bhuvan NOEDA Data Products",
+                "data about BHUVAN store",
+                "show me about Terrestrial Sciences Products",
+                "information about Ocean Sciences Products"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuvan NOEDA Data Products are available on the Bhuvan Store. NOEDA is a data archive for hydrological applications and land surface process monitoring models. It includes 2-day merged Surface Soil Moisture product, Snow Melt and Freeze, and Derived Tropospheric Ozone.Do you want to be redirected to the Bhuvan NOEDA Data Products page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/2dresources/bhuvanstore.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Geo-tagging of Reserve Bank of India (RBI)",
+            "patterns": [
+                "Give information about RBI",
+                "tell me about Geoportal Technologies",
+                "take me to RBI page",
+                "GIS portal"
+            ],
+            "responses": [
+                {
+                    "res": "Geo-tagging has various benefits, such as, provide insights on regional penetration of digital payments; monitor infrastructure density across different locations; identify scope for deploying additional payment touch points; facilitate focused digital literacy programmes.Do you want to be redirected to the RBI page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/rbi"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Geospatial Governance : Dashboard",
+            "patterns": [
+                "Tell me about Geospatial Governance",
+                "Geospatial Governance",
+                "Search for geospatial dashboard",
+                "sitemap"
+            ],
+            "responses": [
+                {
+                    "res": "Geospatial governance provides technical standards for geospatial data. Geospatial dashboards can track performance measures, both technical and nontechnical. They can also support city management.Do you want to be redirected to Geospatial Governance page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/sitemap"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "School Bhuvan",
+            "patterns": [
+                "Show me School Bhuvan",
+                "Map of School Bhuvan"
+            ],
+            "responses": [
+                {
+                    "res": "School Bhuvan is a portal that uses maps to teach students about the country's natural resources, environment, and their role in sustainable development. It's an initiative of Bhuvan - NRSC/ISRO based on the NCERT syllabus.Thanks for asking,here are some results. Do you want to go to the page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/mhrd_ncert/sb/sb.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan",
+            "patterns": [
+                "Tell me about Bhuvan",
+                "What is Bhuvan",
+                "What can Bhuvan do"
+            ],
+            "responses": [
+                "Bhuvan is an initiative by the Indian Space Research Organisation (ISRO) that provides a web-based geoportal for exploring and visualizing various geospatial datasets and satellite imagery of India. Bhuvan means Earth in Sanskrit, and the platform is designed to offer users a range of features related to mapping, navigation, and earth observation."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Tourism : Amritsar",
+            "patterns": [
+                "tell me about tourism in Amritsar",
+                "tourism in Amritsar",
+                "Search for tourism map of Amritsar",
+                "tell me about Amritsar"
+            ],
+            "responses": [
+                {
+                    "res": "Amritsar, in the Indian state of Punjab, is renowned for the iconic Golden Temple, a spiritual and cultural symbol of Sikhism. The city attracts visitors with its vibrant markets, rich history, and the poignant Jallianwala Bagh memorial.Do you want to be redirected to the Amritsar Tourism page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/tourism/tourism.php?tourismid=1"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Bhuvan-Single Sign On",
+            "patterns": [
+                "provide me the sign-up Page",
+                "Sign-up page",
+                "Make an account on Bhuvan"
+            ],
+            "responses": [
+                {
+                    "res": "Bhuvan uses the Central Authentication Service (CAS) to enable Single Sign-On (SSO). This means that users can use the same login credentials if they are already registered with Bhuvan. Do you want to go to the Sign-up page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/tr_forest/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Ludhiana Municipal",
+            "patterns": [
+                "tell me about Ludhiana Municipal",
+                "Tell me about Ludhiana",
+                "Search for map of Ludhiana Municipal",
+                "GIS map of Ludhiana"
+            ],
+            "responses": [
+                {
+                    "res": "Ludhiana Municipal Corporation, located in Punjab, India, is responsible for local governance and civic services in Ludhiana city. It oversees urban infrastructure, public health, waste management, and various municipal services for the residents. Do you want to go to the Ludhiana GSI page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/municipal/municipal.php"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "Punjab Forest",
+            "patterns": [
+                "Show me Punjab Forest",
+                "Map of Punjab forest",
+                "Search Punjab Forest spread in India",
+                "Waste land in Punjab Forest"
+            ],
+            "responses": [
+                {
+                    "res": " Punjab, a state in northern India, has a diverse landscape that includes forests, though the forest cover is relatively limited compared to some other states.Do you want to be redirected to the page?",
+                    "url": "https://bhuvan-app1.nrsc.gov.in/pb_forest/"
+                }
+            ],
+            "context": [
+                ""
+            ]
+        }
+    ]
+}

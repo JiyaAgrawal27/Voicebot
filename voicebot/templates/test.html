@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Embedded Map</title>
+    <!-- Include Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <!-- Create a container for the map -->
+    <div id="map" style="height: 80vh;"></div>
+
+    <script>
+        // Initialize the map
+        var mymap = L.map('map').setView([0, 0], 13);
+
+        // Add OpenStreetMap as the base layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(mymap);
+
+        // Get the user's current location and update the map
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                async function (position) {
+                    // Update the map view to the user's location
+                    mymap.setView([position.coords.latitude, position.coords.longitude], 13);
+
+                    // Add a marker to the map at the user's location
+                    L.marker([position.coords.latitude, position.coords.longitude], {
+                        icon: greenMarkerIcon()
+                    }).addTo(mymap).bindPopup('My Location').openPopup();
+
+                    console.log("lat ", position.coords.latitude);
+
+                    try {
+                        var location = localStorage.getItem("mapType");
+
+                        // Fetch data from the API using async/await
+                        const response = await fetch(`https://bhuvan-app1.nrsc.gov.in/api/api_proximity/curl_hos_pos_prox.php?theme=${location}&lat=${position.coords.latitude}&lon=${position.coords.longitude}&buffer=3000&token=0687b81d9020616bdd322c51a216ef5ad8ed3c69`);
+                        const data = await response.json();
+                        console.log(data)
+                        if (data) {
+                            data.forEach(item => {
+                                console.log(item);
+                                L.marker([item.lat, item.lon]).addTo(mymap).bindPopup('Marker from API').openPopup();
+                            });
+                        }
+                    } catch (error) {
+                        console.error('Error fetching API data:', error.message);
+                    }
+                },
+                function (error) {
+                    console.error('Error getting user location:', error.message);
+                }
+            );
+        } else {
+            console.error('Geolocation is not supported by this browser.');
+        }
+
+        function greenMarkerIcon() {
+            return L.icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+        }
+    </script>
+</body>
+
+</html>
